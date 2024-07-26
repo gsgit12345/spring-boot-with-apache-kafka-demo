@@ -1,0 +1,13 @@
+https://codingnconcepts.com/spring-boot/configure-kafka-producer-and-consumer/#google_vignette  --ssl with kafka
+https://hevodata.com/learn/spring-kafka-consumer/
+https://www.maestralsolutions.com/spring-boot-implementation-for-apache-kafka-with-kafka-tool/
+https://www.confluent.io/blog/apache-kafka-spring-boot-application/
+https://www.geeksforgeeks.org/how-to-connect-mongodb-with-spring-boot/?ref=lbp
+https://www.javaguides.net/2022/05/spring-boot-kafka-jsonserializer-and-Jsondeserializer-example.html#:~:text=Create%20Simple%20POJO%20to%20Serialize%20%2F%20Deserialize&text=Kafka%20finally%20stores%20this%20byte,return%20it%20to%20the%20application.
+
+
+====below command is used to read the message from  topic
+https://kafka.apache.org/quickstart
+https://docs.spring.io/spring-kafka/reference/quick-tour.html
+
+bin/kafka-console-consumer.sh --topic FirstTopic --from-beginning --bootstrap-server localhost:9092
