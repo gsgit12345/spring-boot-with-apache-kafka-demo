@@ -10,4 +10,10 @@ https://www.javaguides.net/2022/05/spring-boot-kafka-jsonserializer-and-Jsondese
 https://kafka.apache.org/quickstart
 https://docs.spring.io/spring-kafka/reference/quick-tour.html
 
+http://localhost:8080/api/v1/kafka/publish
+
+https://stream.wikimedia.org/v2/stream/recentchange     --real time example
+https://esjewett.github.io/wm-eventsource-demo/
+
+
 bin/kafka-console-consumer.sh --topic FirstTopic --from-beginning --bootstrap-server localhost:9092

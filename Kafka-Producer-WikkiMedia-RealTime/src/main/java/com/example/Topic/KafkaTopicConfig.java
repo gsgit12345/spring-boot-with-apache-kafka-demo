@@ -1,4 +1,4 @@
-package com.example.config;
+package com.example.Topic;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.springframework.context.annotation.Bean;
@@ -7,17 +7,9 @@ import org.springframework.kafka.config.TopicBuilder;
 
 @Configuration
 public class KafkaTopicConfig {
-
-@Bean
-    public NewTopic createTopicInKafka()
-    {
-        return TopicBuilder.name("FirstTopic").partitions(10).build();
-    }
-
     @Bean
-    public NewTopic createJsonTopicInKafka()
+    public NewTopic createWikkiMediaTopic()
     {
-        return TopicBuilder.name("FirstJsonTopic").partitions(10).build();
+        return TopicBuilder.name("wikkimedia_topic").build();
     }
-
 }

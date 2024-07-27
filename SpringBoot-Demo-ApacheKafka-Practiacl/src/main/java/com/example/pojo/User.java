@@ -1,6 +1,9 @@
 package com.example.pojo;
 
-public class User {
+
+import java.io.Serializable;
+
+public class User implements Serializable {
     public int getAge() {
         return age;
     }
@@ -15,6 +18,14 @@ public class User {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "age=" + age +
+                ", name='" + name + '\'' +
+                '}';
     }
 
     private int age;

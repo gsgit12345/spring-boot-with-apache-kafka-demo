@@ -5,7 +5,8 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>SpringBoot-Demo-ApacheKafka-Practiacl</module>
-	</modules>
+        <module>Kafka-Producer-WikkiMedia-RealTime</module>
+    </modules>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
