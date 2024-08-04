@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  */
 @SpringBootApplication
-public class SpringBootProducer implements CommandLineRunner
+public class SpringBootProducer //implements CommandLineRunner
 
 {
     public static void main( String[] args )
@@ -19,11 +19,11 @@ public class SpringBootProducer implements CommandLineRunner
         SpringApplication.run(SpringBootProducer.class,args);
         System.out.println( "Hello World!" );
     }
-
+/*
     @Autowired
     private WikkiMediaKafkaProducer producer;
     @Override
     public void run(String... args) throws Exception {
-producer.sendMessage();
-    }
+     producer.sendMessage();
+    }*/
 }

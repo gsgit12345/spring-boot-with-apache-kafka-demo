@@ -10,13 +10,13 @@ public class WikkiMediaChangeHandler implements EventHandler {
 
     private String topic;
     private static final Logger LOGGER= LoggerFactory.getLogger(WikkiMediaChangeHandler.class);
+    private KafkaTemplate<String,String> kafkaTemplate;
 
-    public WikkiMediaChangeHandler(String topic, KafkaTemplate<String, String> kafkaTemplate) {
+    public WikkiMediaChangeHandler( KafkaTemplate<String, String> kafkaTemplate,String topic) {
         this.topic = topic;
         this.kafkaTemplate = kafkaTemplate;
     }
 
-    private KafkaTemplate<String,String> kafkaTemplate;
     @Override
     public void onOpen() throws Exception {
 
@@ -29,8 +29,11 @@ public class WikkiMediaChangeHandler implements EventHandler {
 
     @Override
     public void onMessage(String s, MessageEvent messageEvent) throws Exception {
-        LOGGER.info("message received in Onmessage->%s",messageEvent.getData());
+        LOGGER.info(String.format("message received-->%s",messageEvent.getData()));
+
         kafkaTemplate.send(topic,messageEvent.getData());
+
+        //System.out.println("date ::::"+messageEvent.getData());
 
     }
 

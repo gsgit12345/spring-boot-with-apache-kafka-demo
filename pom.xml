@@ -6,7 +6,8 @@
 	<modules>
 		<module>SpringBoot-Demo-ApacheKafka-Practiacl</module>
         <module>Kafka-Producer-WikkiMedia-RealTime</module>
-    </modules>
+		<module>kafka-consumer-database-demo</module>
+	</modules>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

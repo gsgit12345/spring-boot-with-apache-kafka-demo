@@ -20,8 +20,8 @@ public class WikkiMediaKafkaProducer {
     private KafkaTemplate<String,String> kafkaTemplate;
 
     public void sendMessage() throws InterruptedException {
-String topic="wikkimedia_topic";
-        EventHandler  eventHandler=new WikkiMediaChangeHandler(topic,kafkaTemplate);
+String topic="wikimedia_recentchange";
+        EventHandler  eventHandler=new WikkiMediaChangeHandler(kafkaTemplate,topic);
         String url="https://stream.wikimedia.org/v2/stream/recentchange";
         EventSource.Builder builder=new EventSource.Builder(eventHandler, URI.create(url));
         EventSource eventSource=builder.build();
